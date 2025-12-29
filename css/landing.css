@@ -798,21 +798,26 @@ ul {
 
   .mobile-menu-toggle {
     display: block;
-    order: 1;
+    order: 3;
+    margin-left: 1rem;
   }
 
   .header-logo-section {
-    order: 2;
-    flex: 1;
-    justify-content: center;
+    order: 1;
+    flex: 0 1 auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .header-logo {
-    height: 30px;
+    height: 22px;
+    width: 100%;
+    padding-right: 20px;
   }
 
   .header-contact-link {
-    order: 3;
+    order: 2;
   }
 
   /* Desktop: show image, hide icon */
