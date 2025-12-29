@@ -25,15 +25,34 @@
          HEADER TOP (Black bar with logo)
          ======================================== -->
     <header class="header-top">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="header-logo-section">
-            <img src="img/logos/logo-superior-vanguard.png" alt="Vanguard Logo"
-                class="header-logo">
+            <img src="img/logos/logo-superior-vanguard.png" alt="Vanguard Logo" class="header-logo">
         </div>
         <a href="#contacto" class="header-contact-link">
-            <img src="img/ui/contactanos.png" alt="Contactanos"
-                class="header-contact-btn">
+            <img src="img/ui/contactanos.png" alt="Contactanos" class="header-contact-btn">
+            <i class="fas fa-phone mobile-contact-icon"></i>
         </a>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+                    <li><a href="#marcas" class="mobile-nav-link">Marcas</a></li>
+                    <li><a href="#productos" class="mobile-nav-link">Nuestros Productos</a></li>
+                    <li><a href="#compania" class="mobile-nav-link">Nuestra Compañía y Visión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <!-- ========================================
          NAVIGATION (White bar)
@@ -50,8 +69,7 @@
     <!-- ========================================
          HERO SECTION (Main banner)
          ======================================== -->
-    <section id="inicio" class="hero"
-        style="background-image: url('img/banners/imagen-banner.png');">
+    <section id="inicio" class="hero" style="background-image: url('img/banners/imagen-banner.png');">
         <div class="hero-overlay">
             <img src="img/banners/barra-lateral-banner.png" alt="VGL Overlay">
         </div>
@@ -80,40 +98,37 @@
          CATEGORIES SECTION (6 products)
          ======================================== -->
     <section id="productos" class="categories">
+        <h2 class="categories-title">
+            <span class="categories-title-dark">NUESTRAS</span> <span class="categories-title-red">CATEGORÍAS</span>
+        </h2>
         <div class="categories-grid">
             <div class="category-item">
-                <img src="img/categorias/1-bujias.png" alt="Bujías"
-                    class="category-icon">
+                <img src="img/categorias/1-bujias.png" alt="Bujías" class="category-icon">
                 <p class="category-name">Bujías</p>
             </div>
 
             <div class="category-item">
-                <img src="img/categorias/2-suspension.png"
-                    alt="Suspensión y Amortiguadores" class="category-icon">
+                <img src="img/categorias/2-suspension.png" alt="Suspensión y Amortiguadores" class="category-icon">
                 <p class="category-name">Suspensión<br>y Amortiguadores</p>
             </div>
 
             <div class="category-item">
-                <img src="img/categorias/3-tijera.png" alt="Tijeral"
-                    class="category-icon">
+                <img src="img/categorias/3-tijera.png" alt="Tijeral" class="category-icon">
                 <p class="category-name">Tijeral</p>
             </div>
 
             <div class="category-item">
-                <img src="img/categorias/4-juntas.png" alt="Juntas"
-                    class="category-icon">
+                <img src="img/categorias/4-juntas.png" alt="Juntas" class="category-icon">
                 <p class="category-name">Juntas</p>
             </div>
 
             <div class="category-item">
-                <img src="img/categorias/5-filtros.png" alt="Filtros"
-                    class="category-icon">
+                <img src="img/categorias/5-filtros.png" alt="Filtros" class="category-icon">
                 <p class="category-name">Filtros</p>
             </div>
 
             <div class="category-item">
-                <img src="img/categorias/6-aceites.png"
-                    alt="Aceites para vehículos" class="category-icon">
+                <img src="img/categorias/6-aceites.png" alt="Aceites para vehículos" class="category-icon">
                 <p class="category-name">Aceites para<br>vehículos</p>
             </div>
         </div>
@@ -228,8 +243,7 @@
          ======================================== -->
     <div class="footer-bottom">
         <div class="footer-bottom-content">
-            <img src="img/logos/logo-superior-vanguard.png" alt="Vanguard Logo"
-                class="footer-logo">
+            <img src="img/logos/logo-superior-vanguard.png" alt="Vanguard Logo" class="footer-logo">
 
             <div class="footer-social">
                 <span class="footer-social-text">Síguenos:</span>
@@ -240,8 +254,7 @@
                     <a href="#" class="social-icon" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/+5491112345678" class="social-icon" aria-label="WhatsApp"
-                        target="_blank">
+                    <a href="https://wa.me/+5491112345678" class="social-icon" aria-label="WhatsApp" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <a href="#" class="social-icon" aria-label="YouTube">
